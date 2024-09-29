@@ -4,7 +4,7 @@ public class Eagle implements Flying, Carnivore{
 
     @Override
     public void eat(Meat food) {
-        System.out.println("Eagle eats "+food.getClass().toString()+".");
+        System.out.println("Eagle eats "+ food.getClass().getSimpleName() +".");
     }
 
     @Override
