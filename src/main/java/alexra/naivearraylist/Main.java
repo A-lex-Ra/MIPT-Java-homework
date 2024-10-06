@@ -4,10 +4,10 @@ public class Main {
     public static void main(String[] args) {
         CustomArrayList<Integer> myList = new CustomArrayList<>();
 
-        myList.add(Integer.valueOf(1));
-        myList.add(Integer.valueOf(3));
-        myList.add(Integer.valueOf(988));
-        myList.add(Integer.valueOf(1662));
+        myList.add(1);
+        myList.add(3);
+        myList.add(988);
+        myList.add(1662);
 
         printCustomList(myList);
 
