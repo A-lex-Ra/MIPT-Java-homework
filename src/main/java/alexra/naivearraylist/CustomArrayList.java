@@ -49,9 +49,7 @@ public class CustomArrayList<T> implements CustomList<T> {
             throw new IllegalArgumentException("lengthIncreaseAmount was less than 0, that isn't allowed");
         }
         Object[] newArray = new Object[array.length + lengthIncreaseAmount];
-        for (int i = 0; i < array.length; i++) {
-            newArray[i] = array[i];
-        }
+        System.arraycopy(array, 0, newArray, 0, array.length);
         array = newArray;
     }
 
